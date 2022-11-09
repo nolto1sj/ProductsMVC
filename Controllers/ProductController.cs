@@ -38,7 +38,7 @@ namespace ProductsMvcDbFirst.Controllers
 
         public IActionResult Details(int id)
         {
-            Product p = _db.Products.FirstOrDefault(x => x.Id == id);
+            Product p = _db.Products.FirstOrDefault(x => x.Id == id); //this product model has all the information
             ProductDetails pd = new ProductDetails()
             {
                 Id = p.Id,

@@ -6,7 +6,7 @@ namespace ProductsMvcDbFirst.Controllers
 {
     public class ProductController : Controller
     {
-        ProductsMvcDbFirstContext _db = new ProductsMvcDbFirstContext();
+        ProductsMvcDbFirstContext _db = new ProductsMvcDbFirstContext(); //only one controller that accesses the database, we did not create a service.
 
         public IActionResult Index()
         {
